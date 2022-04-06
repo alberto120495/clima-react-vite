@@ -1,8 +1,13 @@
+import AppClima from "./components/AppClima";
+import { ClimaProvider } from "./context/ClimaProvider";
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <ClimaProvider>
+      <header>
+        <h1>Buscador de Clima</h1>
+      </header>
+      <AppClima />
+    </ClimaProvider>
   );
 }
 
